@@ -1,0 +1,133 @@
+*{margin:0;padding:0;outline:0;text-decoration:none;list-style:none;}
+html,body{font-family: CenturyGothic,siyuan,'Microsoft YaHei',sans-serif;font-size:14px;}
+body{background:#00f;}
+img{border:none;}
+.logo{
+  position:fixed;
+  top:18px;
+  left:97px;
+  z-index:99999;
+}
+.menu{
+  width:100px;
+  height:48px;
+  position:fixed;
+  top:18px;
+  right:55px;
+  color:#009572;
+  font-size:16px;
+  line-height:48px;
+  cursor:pointer;
+  transition:all 0.3s ease-in 0s;
+  z-index:10000;
+}
+/*清除外边距溢出*/
+.clear::after{
+  content:"";
+  display:table;
+  clear:both;
+}
+.menu p{
+  font-size:16px;
+  color:#fff;
+  float:left;
+}
+.menu-handler{
+  width:48px;
+  height:48px;
+  cursor:pointer;
+  position:relative;
+  float:right;
+  transition:all 0.3s ease-out;
+}
+.menu-handler .burger{
+  width:32px;
+  height:3px;
+  background:#fff;
+  display: block;
+  position:absolute;
+  z-index:5;
+  top:12px;
+  left:50%;
+  margin:0px 0px 0px -16px;
+  transform-origin: 50% 50%;
+  border-radius:2px;
+}
+.menu-handler .burger-2{
+  top:24px;
+}
+.menu-handler .burger-3{
+  top:36px;
+}
+.menu-handler:active .burger-1{
+  top:24px;
+  transform: rotate(225deg);
+}
+.menu-handler:active .burger-2{
+  background-color: transparent;
+}
+.menu-handler:active .burger-3{
+  top:24px;
+  transform: rotate(-225deg);
+}
+
+.nav-box{
+  background:rgba(56,239,199,0.92);
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:-100%;
+  opacity: 0;
+  z-index:10000;
+}
+.nav-box:active{
+  top:0; 
+  opacity: 1;
+}
+.nav-center{
+  width:1560px;
+  margin:15% auto 0;
+}
+.nav-list li{
+  float:left;
+  width:16.6666%;
+  text-align:center;
+  position:relative;
+}
+.nav-list li div:nth-child(2){
+  margin-top:77px;
+  display:inline-block;
+  margin:0 auto;
+}
+.nav-list li div span,.nav-list li div span a{
+  font-size:16px;
+  color:#fff;
+  padding-bottom:30px;
+  display:block;
+}
+.nav-list p{
+  line-height:30px;
+}
+.nav-list p a{
+  font-size:14px;
+  color:#fff;
+}
+.nav-list li div:nth-child(2)::after{
+  content:"";
+  border-right:1px solid rgba(255,255,255,0.54);
+  height:140px;
+  width:3px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+.nav-box h3{
+  font-size:26px;
+  color:#fff;
+  text-align:center;
+  margin:3% auto 5%;
+  font-weight:normal;
+}
+.nav-center .phone{
+  margin-top:3% auto 5%;
+}
