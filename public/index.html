@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="亚丹家居 整体衣柜 定制衣柜 全屋定制家居 榻榻米 整体衣柜加盟 定制衣柜加盟 全屋定制加盟 衣柜定制 定制衣柜">
-  <meta name="description" content="亚丹家居集团成立于2003年，始终专注于定制领域，并以打造生态环保家居为目标。历经衣柜定制、全屋定制、全屋生态定制发展过程，实现“定制”“全屋”“生态”的完全整合，积极推动家居行业与生态环保的融合发展，是中国生态定制行业的倡导者与领先品牌！">
   <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="js/main.js"></script>
   <title>亚丹家居，全屋生态定制</title>
 </head>
 <body class="index" style="padding-top:0">
@@ -22,8 +19,9 @@
       <span class="burger burger-3"></span>
     </div>
   </div>
+ 
   <!--下拉菜单的透明滤镜-->
-  <div class="nav-box">
+  <div class="nav-box" id="nav-box">
     <!--菜单的主体区域,包括3个部分-->
     <div class="nav-center">
       <!--第一部分上半部分-->
@@ -102,8 +100,17 @@
         <h3>全国免费服务热线：400-6966-616</h3>
       </div>
       <!--a标签按钮-->
-      <a href="#"></a>
+      <a href="javascript:;" class="nav-close"></a>
     </div>
   </div>
+   <script>
+    var menu_handler=document.getElementById("menu-handler");
+		menu_handler.onclick=function(){
+			var menu_handler=this;
+			var nav_box=document.getElementById("nav-box");
+			nav_box.style.top=0;
+      nav_box.style.opacity=1;
+		}
+  </script>
 </body>
 </html>

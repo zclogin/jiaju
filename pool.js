@@ -1,4 +1,3 @@
-"use strict";
 const mysql=require('mysql');
 var pool=mysql.createpool({
 	host:'127.0.0.1',
@@ -8,7 +7,6 @@ var pool=mysql.createpool({
 	database:'gw',
 	connectionLimit:20
 });
-Object.freeze(pool);
 module.exports=pool;
 
 
